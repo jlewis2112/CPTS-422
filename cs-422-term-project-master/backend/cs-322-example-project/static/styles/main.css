@@ -1,0 +1,294 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: Futura, sans-serif;
+}
+
+header {
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 130px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    font-family: Futura, sans-serif;
+    font-size: 150%;
+}
+
+/*Tab styling*/
+a:hover,a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.submit_review_input {
+    float: right;
+    width: 200px;
+}
+
+.cancel_review {
+    display: block;
+    width: 200px;
+}
+
+.review_rating_input {
+    width: 200px;
+}
+
+.review_input {
+    display: block;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    height:  200px;
+}
+
+#addReviewForm {
+    display: block;
+    margin: auto;
+    padding: 85px 15% 85px 15%;
+    background-color: lightyellow;
+}
+
+.review {
+    background-color: lightblue;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.timestamp {
+    margin: 10px 10px 10px 0;
+}
+
+.review_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.review_text {
+    width: calc(100% - 80px);
+}
+
+.review_rating {
+    width: 80px;
+}
+
+.professorlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.rating_none {
+    background-image: url("../images/ratings.png");
+    background-position: -301px 0;
+    color: transparent;
+    height: 60px;
+    width: 55px;
+}
+
+.rating_1 {
+    background-image: url("../images/ratings.png");
+    background-position: -240px 0;
+    color: transparent;
+    height: 60px;
+    width: 60px;
+}
+
+.rating_2 {
+    background-image: url("../images/ratings.png");
+    background-position: -180px 0;
+    color: transparent;
+    height: 60px;
+    width: 60px;
+}
+
+.rating_3 {
+    background-image: url("../images/ratings.png");
+    background-position: -120px 0;
+    color: transparent;
+    height: 60px;
+    width: 60px;
+}
+
+.rating_4 {
+    background-image: url("../images/ratings.png");
+    background-position: -60px 0;
+    color: transparent;
+    height: 60px;
+    width: 60px;
+}
+
+.rating_5 {
+    background-image: url("../images/ratings.png");
+    color: transparent;
+    height: 60px;
+    width: 60px;
+}
+
+.professor_box {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 2px;
+}
+
+.prof_info {
+    width: calc(100% - 180px);
+}
+
+.overall_rating {
+    width: 80px;
+}
+
+.prof_button {
+    width: 100px;
+}
+
+.selected_prof {
+    width: calc(100% - 440px);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.header_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab .nav-tabs {
+	background-color: white;
+}
+
+.tab .nav-tabs {
+	position: fixed;
+	top: 135px;
+    border-bottom: none;
+    z-index: 2;
+}
+
+.tab .nav-tabs li {
+    margin: 0;
+}
+
+.tab .nav-tabs li a {
+    display: block;
+    padding: 20px 15px;
+    background: #ffffff;
+    color: #d39102;
+    text-transform: uppercase;
+    text-align: center;
+	border: 1px solid  #ffebc8;
+	border-bottom: none;
+    margin-right: 0;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    /*transition: all 0.3s ease 0s;*/
+}
+
+.tab .nav-tabs li a:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #e9e9e9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    perspective-origin: 50% 100%;
+    transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    transform-origin: 50% 100% 0;
+    transition: transform 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.tab .nav-tabs li.active a:after {
+    background: #eee6d2;
+    transform: perspective(900px) rotate3d(1, 0, 0, 0deg);
+}
+
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li a:hover {
+	color: #4b489b;
+	font-weight: bold;
+    border: none;
+}
+
+.mytab {
+	margin-top: 135px;
+	margin-left: 15px;
+	width: 98%;
+    font-family: Futura, sans-serif;
+	font-size: 130%;
+}
+
+.tab-content {
+	top: 135px;
+    padding: 5px 0px 0px 0px;
+
+}
+
+.tab-pane {
+	position: relative;
+	margin-top: 70px;
+	background: #eee6d2;
+    color: #000000;
+    line-height: 26px;
+}
+
+/*CSS styling for the #addprof tab*/
+
+form#addProfForm {
+	display: block;
+	background-color : #eee6d2;
+	padding: 1% 15% 85px 15%;  /*adding the button height and buttons' top-bottom margins to the bottom padding */
+}
+
+.labels {
+	width: 100px;
+}
+
+.prof_inputs {
+	margin: 15px 0px 15px 0px;
+} 
+
+.name_input, .lastname_input, .title_input, .school_input {
+	width: calc(100% - 110px); 
+	height: 35px; 
+}
+
+.submit_prof_input {
+	float: right;
+	width: 170px;
+	font-weight: bold;	
+	margin: 20px 0px 20px 0px;
+}
+
+.cancel_prof {
+	float: left;
+	width: 170px;
+	font-weight: bold;	
+	margin: 20px 0px 20px 0px;
+
+}
+
+@media screen and (max-width:800px) {
+	.professor_box {
+        width: 98%;
+	}
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .professor_box {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .professor_box {
+        width: 32%;
+    }
+}

@@ -1,0 +1,488 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Khyay';
+  src: local('Khyay'), url(./fonts/Khyay-Regular.ttf) format('truetype');
+}
+
+.web-banner {
+  background-color: #2AADF6;
+  height: 120px; 
+  width: 100%;
+  opacity: 89%;
+}
+
+.title {
+  font-family: Khyay; 
+  font-size: 20pt; 
+  color: white; 
+  position: absolute;
+  margin: 42px; 
+  margin-left: 146px;
+  letter-spacing: 3px;
+}
+
+.logo {
+  position: absolute;
+  margin: 24px;
+  width: 90px; 
+}
+
+.my_root{
+  position: relative;
+  border: 3px solid black;
+  width: 50%;
+  margin-top: 60px;
+  height: 400px;
+}
+
+
+.orange-banner {
+  background-color: #D36C21; 
+  width: 100%; 
+  height: 11px; 
+  opacity: 79%;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font: Arial; 
+  font-size: 14pt;
+  color: black; 
+  text-align: center; 
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.Header_Apartments
+{
+  font: "ariel";
+  font-size: 20pt;
+  color: black; 
+  margin: auto; 
+  position: absolute; 
+  left: 45px; 
+  top: 23%; 
+}
+
+.Sectional
+{
+  background-color: #D36C21;
+  height: 2px; 
+  width: 90%; 
+  color: #D36C21;
+  position: absolute;
+  top: 31%; 
+  left: 45px;  
+}
+
+.formControl
+{
+  min-width: 150;
+  position: absolute;
+  left: 45px;
+  top: 113px; 
+  width: 60px;
+
+  /*margin: theme.spacing(1), */
+
+}
+.formControl2
+{
+  min-width: 150;
+  position: absolute;
+  left: 159px;
+  top: 66px; 
+  width: 60px;
+
+  /*margin: theme.spacing(1), */
+
+}
+
+.filterButton
+{
+    color: #D36C21;
+    border: 2px solid #D36C21;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px; 
+    width: 150px;
+    left: 262px;
+    position: absolute; 
+    top: 38%; 
+
+}
+
+.logo1
+{
+  height: 160px; 
+  width: 160px; 
+  position: absolute;
+  left: 45px;
+  bottom: 185px; 
+}
+
+.logo2
+{
+  height: 160px; 
+  width: 160px; 
+  position: absolute; 
+  left: 45px; 
+  top: 583px; 
+
+}
+
+.logo3
+{
+  height: 160px; 
+  width: 160px; 
+  position: absolute; 
+  left: 45px; 
+  top: 840px; 
+}
+
+.ApartmentUnitTitles1
+{
+  color: #D36C21; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  text-decoration: underline;
+  position: absolute; 
+  left: 233px; 
+  top: 54%; 
+}
+
+.ApartmentUnitTitles2
+{
+  color: #D36C21; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  text-decoration: underline;
+  position: absolute; 
+  left: 233px; 
+  top: 91%; 
+
+}
+
+.ApartmentUnitTitles3
+{
+  color: #D36C21; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  text-decoration: underline;
+  position: absolute; 
+  left: 233px; 
+  top: 128%; 
+
+}
+
+.subHeadings_Gray
+{
+  color: gray; 
+  position: absolute;
+  left: 233px; 
+}
+
+#BB1
+{
+  top: 59%; 
+}
+
+#BB2
+{
+  top: 96%; 
+}
+
+#BB3
+{
+  top: 133%; 
+}
+
+#MR1
+{
+  left: 351px; 
+  top: 59%; 
+
+}
+
+#MR2
+{
+  left: 351px; 
+  top: 96%; 
+
+}
+
+#MR3
+{
+  left: 351px; 
+  top: 133%; 
+
+}
+
+#SF1
+{
+  top: 59%; 
+  left: 477px; 
+
+}
+
+#SF2
+{
+  top: 96%; 
+  left: 477px; 
+
+}
+
+#SF3
+{
+  top: 133%; 
+  left: 477px; 
+
+}
+
+#BB1_1
+{
+  color: black;
+  top: 63%; 
+  left: 235px; 
+
+}
+#BB2_2
+{
+  color: black;
+  left: 235px; 
+  top: 100%; 
+  
+}
+#BB3_3
+{
+
+  color: black; 
+  left: 235px; 
+  top: 137%; 
+}
+#MR1_1
+{
+  color: black;
+  top: 63%; 
+  left: 367px; 
+
+}
+#MR2_2
+{
+
+  color: black; 
+  top: 100%; 
+  left: 367px; 
+
+}
+
+#MR3_3
+{
+
+  color: black; 
+  top: 137%; 
+  left: 367px; 
+
+
+}
+
+#SF1_1
+{
+
+  color: black; 
+  top: 63%; 
+  left: 480px; 
+
+
+}
+#SF2_2
+{
+
+  color: black; 
+  top: 100%; 
+  left: 480px; 
+
+
+}
+#SF3_3
+{
+
+  color: black; 
+  top: 137%; 
+  left: 480px; 
+
+
+}
+
+#Sub_Apply
+{
+  font-size: 14pt;
+  top: 32%; 
+
+}
+
+#Login
+{
+  font: "ariel";
+  font-size: 20pt;
+  color: black; 
+  margin: 0px;
+  text-align: center;
+  padding-top: 40px;
+}
+.my_logo
+{
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.my_TxtF1{
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  width: 70%;
+  left: 15%;
+}
+.my_TxtF2{
+  position: absolute;
+  top: 30px;
+  text-align: center;
+  width: 70%;
+  left: 15%;
+ }
+ .my_filterButton
+{
+  color: #D36C21;
+  border: 2px solid #D36C21;
+  font-size: 12pt;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px; 
+  width: 150px;
+  left: 262px;
+  position: relative; 
+  top: 60px; 
+}
+
+#Sectional_2
+{
+  top: 38%; 
+}
+
+.TxtF1
+{
+
+  position: absolute; 
+  top: 160px;
+  width: 26%;
+  left: 45px; 
+}
+
+.TxtF2
+{
+
+  position: absolute; 
+  top: 160px;
+  width: 26%;
+  left: 113px; 
+}
+
+.TxtF3
+{
+
+  position: absolute; 
+  top: 160px;
+  width: 25%;
+  left: 181px; 
+}
+
+.TxtF4
+{
+
+  position: absolute; 
+  top: 210px;
+  width: 26%;
+  left: 45px; 
+}
+
+.TxtF5
+{
+
+  position: absolute; 
+  top: 210px;
+  width: 26%;
+  left: 115px; 
+}
+
+.TxtF6
+{
+
+  position: absolute; 
+  top: 210px;
+  width: 26%;
+  left: 181px; 
+}
+
+#CA
+{
+  width: 200px;
+  top: 75%; 
+  left: 45px; 
+  border: 4px solid #D36C21;
+  font-weight: bold;
+}
+
+.SubHome_Title
+{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  position: absolute;
+  left: 50%;
+}
+
+#slides
+{
+  position: relative; 
+  top: 79px; 
+}
+
+.welcomeText
+{
+  position: relative;
+  top: 48px;
+  left: 37%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  font-weight: 500;
+}
+
+
